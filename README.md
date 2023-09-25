@@ -13,7 +13,7 @@ public static string Check(string[] input)
 ```
 
 <br>
-Continuiamo facendo un controllo su lunghezza e inizio del nostro numero di telefono: in caso il numero inizi per <b>0039</b> o <b>+39</b>, dovremo controllare che, dopo i prefissi citati, siano presenti altri 10 numeri, primo dei quali dovrà essere un <b>3</b>. Un altro caso accettabile lo troviamo se il numero sia semplicemente lungo 10 e inizi per tre.
+Continuiamo facendo un controllo su lunghezza e inizio del nostro numero di telefono: in caso il numero inizi per <b>0039</b> o <b>+39</b>, dovremo controllare che, dopo i prefissi citati, siano presenti altri 10 numeri, primo dei quali dovrà essere un <b>3</b>. Un altro caso accettabile lo troviamo se il numero sia semplicemente lungo 10 e inizi per <b>3</b>.
 
 ```c#
 if((numero.Length==14&&numero.Substring(0,5)=="00393")||(numero.Length==10&&numero[0]=='3')||(numero.Length==13&&numero.Substring(0,4)=="+393"))
