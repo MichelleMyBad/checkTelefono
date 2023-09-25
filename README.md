@@ -13,13 +13,13 @@ public static string Check(string[] input)
 ```
 
 <br>
-Continuiamo facendo un controllo su lunghezza e inizio del nostro numero di telefono: in caso il numero inizi per <b>0039</b> o <b>+39</b>, dovremo controllare che, dopo i prefissi citati, siano presenti altri 10 numeri, primo dei quali dovrà essere un <b>3</b>. Un altro caso accettabile lo troviamo se il numero sia semplicemente lungo 10 e inizi per <b>3</b>.
+Continuiamo facendo un controllo su lunghezza e inizio del nostro numero di telefono: in caso il numero inizi per <b>0039</b> o <b>+39</b>, dovremo controllare che, dopo i prefissi citati, siano presenti altri 10 numeri, primo dei quali dovrà essere un <b>3</b>. Un altro caso accettabile lo troviamo se il numero è semplicemente lungo 10 e inizi per <b>3</b>.
 
 ```c#
 if((numero.Length==14&&numero.Substring(0,5)=="00393")||(numero.Length==10&&numero[0]=='3')||(numero.Length==13&&numero.Substring(0,4)=="+393"))
 ```
 N.B. È importante controllare prima la lunghezza e poi l'inizio del numero per velocizzare il controllo.
-<br>
+<br><br>
 Successivamente creiamo una funzione che, tramite ciclo <i>for</i>, controlli se il numero di cellulare ricevuto contiene o meno dei caratteri non numerici, in caso tali caratteri venghano rilevati, la nostra funzione ritornerà <i>false</i>, di modo da poter segnalare di scartare il numero.
 
 ```c#
