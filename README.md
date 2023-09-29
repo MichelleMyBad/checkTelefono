@@ -1,5 +1,7 @@
 # checkTelefono
-Esercizio C# in console che permette di trovare il numero di cellulare italiano in un array di numeri.
+
+## Descrizione
+#### Esercizio C# in console che permette di trovare il numero di cellulare italiano in un array di numeri.
 
 # Svolgimento
 Per prima cosa bisognerà creare un <i>for</i> che scorra l'array contenente i diversi numeri di telefono e assegnare il numero da controllare ad una variabile.
